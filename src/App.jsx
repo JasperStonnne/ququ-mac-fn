@@ -456,8 +456,8 @@ export default function App() {
 
     const initializeHotkey = async () => {
       try {
-        // 注册默认热键 CommandOrControl+Shift+Space
-        const success = await registerHotkey('CommandOrControl+Shift+Space');
+        // 注册默认热键 F18
+        const success = await registerHotkey('F18');
         if (success) {
           console.log('主窗口热键注册成功');
         } else {

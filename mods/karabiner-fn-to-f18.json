@@ -1,0 +1,27 @@
+{
+  "title": "QuQu: map Fn/Globe to F18 (for Electron hotkey)",
+  "rules": [
+    {
+      "description": "Fn/Globe key alone → F18 (QuQu recording toggle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "apple_vendor_keyboard_key_code": "mission_control",
+            "modifiers": { "optional": ["any"] }
+          },
+          "to": [{ "key_code": "f18" }],
+          "conditions": []
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "fn",
+            "modifiers": { "optional": ["any"] }
+          },
+          "to": [{ "key_code": "f18" }]
+        }
+      ]
+    }
+  ]
+}

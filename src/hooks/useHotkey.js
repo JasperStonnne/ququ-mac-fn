@@ -5,7 +5,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
  * 处理全局快捷键功能，包括F2双击功能
  */
 export const useHotkey = () => {
-  const [hotkey, setHotkey] = useState('CommandOrControl+Shift+Space');
+  const [hotkey, setHotkey] = useState('F18');
   const [isRegistered, setIsRegistered] = useState(false);
   const registeredHotkeyRef = useRef(null); // 跟踪已注册的热键
 

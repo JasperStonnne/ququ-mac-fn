@@ -49,7 +49,7 @@ class EnvironmentManager {
       theme: process.env.THEME || "auto",
       windowAlwaysOnTop: process.env.WINDOW_ALWAYS_ON_TOP === "true",
       startMinimized: process.env.START_MINIMIZED === "true",
-      globalHotkey: process.env.GLOBAL_HOTKEY || "CommandOrControl+Shift+Space",
+      globalHotkey: process.env.GLOBAL_HOTKEY || "F18",
     };
   }
 
